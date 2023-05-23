@@ -60,7 +60,7 @@ function Tent_Site_Map () {
     // const currentRef= useRef(null);
     // const [isTop,setIsTop] = useState(false);
     const {isLoaded} = useLoadScript({
-        googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
+        googleMapsApiKey: import.meta.env.GOOGLE_MAPS_API_KEYS,
     });
 
     // useEffect(()=>{

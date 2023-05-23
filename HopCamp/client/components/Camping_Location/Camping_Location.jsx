@@ -6,7 +6,7 @@ import CustomMarker from "./assets/campsite_marker.png";
 function Camping_Location () {
     
     const {isLoaded} = useLoadScript({
-        googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
+        googleMapsApiKey: import.meta.env.GOOGLE_MAPS_API_KEY,
     });
 
     if (!isLoaded) return <div>...Loading</div>;
