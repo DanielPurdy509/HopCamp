@@ -25,7 +25,7 @@ app.get('/api/campsites',(req,res)=>{
 })
 
 app.get("/api/ratings", (req, res) => {
-    console.log(req.query);
+    // console.log(req.query);
     pool.query("SELECT * FROM rating", (err, result) => {
         if (err) {
             console.error(err);
@@ -40,7 +40,7 @@ app.get("/api/ratings", (req, res) => {
 });
 
 app.get("/api/camping-spots", (req, res) => {
-    console.log(req.query);
+    // console.log(req.query);
     pool.query("SELECT * FROM camping_spot", (err, result) => {
         if (err) {
             console.error(err);
@@ -49,14 +49,14 @@ app.get("/api/camping-spots", (req, res) => {
             console.log(`CAMPING_SPOT table not found`);
             res.status(404).send(`CAMPING_SPOT table not found`);
         } else {
-            console.log(result.rows);
+            // console.log(result.rows);
             res.json(result.rows);
         }
     })
 });
 
 app.get("/api/campers-also", (req, res) => {
-    console.log(req.query);
+    // console.log(req.query);
     pool.query("SELECT * FROM campers_also", (err, result) => {
         if (err) {
             console.error(err);
@@ -65,7 +65,7 @@ app.get("/api/campers-also", (req, res) => {
             console.log(`CAMPERS_ALSO table not found`);
             res.status(404).send(`CAMPERS_ALSO table not found`);
         } else {
-            console.log(result.rows);
+            // console.log(result.rows);
             res.json(result.rows);
         }
     })
@@ -94,7 +94,7 @@ pool
 
   app.get('/api/things-nearby', function(req, res) {
     pool.query(`SELECT * FROM things_nearby`, function(err, response) {
-        console.log(err ? err : response.rows)
+        // console.log(err ? err : response.rows)
         res.json(response.rows)
     })
 });

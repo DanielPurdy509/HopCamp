@@ -4,7 +4,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "generator": "concurrently \"node ./faker/campersAlsoSEED.cjs\" \"node ./faker/campingSpotSEED.cjs\" \"node ./faker/campSitesSEED.cjs\" \"node ./faker/photosSEED.cjs\" \"node ./faker/ratingSEED.cjs\" \"node ./faker/tentLocationsSEED.cjs\" \"node ./faker/thingsNearbySEED.cjs\""
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "faker": "^5.5.3",
+    "k6": "^0.0.0",
     "pg": "^8.11.0"
   },
   "devDependencies": {
