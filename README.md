@@ -2,7 +2,7 @@
 
 # System Design Capstone - Optimization of HopCamp (HipCamp Clone)
 
-- Testing of previously developed [HipCamp](https://github.com/MCSP-20-FEC-Git-R-DOM/HopCamp) application for efficiency and optimization in order to explore routes for further improvement.
+- Testing of previously developed [HopCamp](https://github.com/MCSP-20-FEC-Git-R-DOM/HopCamp) application for efficiency and optimization in order to explore routes for further improvement.
 
 ## Objectives
 
@@ -45,7 +45,7 @@
 
 - The group decided to prioritize database optimization as the primary focus.
 - Faker.js was utilized to populate the initial database hosted on Supabase with simulated real-world data comprising 10,000 virtual users.
-- The backend server of HipCamp was hosted on Digital Ocean droplets, enabling individual group members to conduct local tests on a shared server environment.
+- The backend server of HopCamp was hosted on Digital Ocean droplets, enabling individual group members to conduct local tests on a shared server environment.
 - Testing comprised of baseline, smoke, load, stress, spike, and breakpoint tests.
 
 ### Findings:
