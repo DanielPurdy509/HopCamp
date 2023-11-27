@@ -13,7 +13,7 @@
 
 ## Tech Stack
 
-### HipCamp Tech Stack:
+### HopCamp Tech Stack:
   <br>
   
   [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
