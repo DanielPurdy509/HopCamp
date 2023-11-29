@@ -50,4 +50,36 @@
 
 ### Findings:
 
-- 
+- Almost all tests failed to complete when database was seeded with simulated data.
+- In its current state, the application used SELECT * queries in order to display minimal data for front-end demonstration and was not designed for scaling. 
+- Sever queries will need to be modified along with the database schema in order to facilitate testing with faker.js data to simulate real world usage.
+
+## Original database ERD
+
+<img alt="FEC Original ERD" src="https://github.com/DanielPurdy509/SDC-Project---HopCamp/assets/125397922/f70bcc9a-4cea-44f1-b011-ee11e00836e7">
+
+- HopCamp's original database schema with only one table per component not related to the overall campsite displayed.
+
+## Revised database ERD
+
+<img alt="DB-Revision ERD" src="https://github.com/DanielPurdy509/SDC-Project---HopCamp/assets/125397922/2f702712-d495-495e-9cc6-9e7edaab33f1">
+
+- Revised HopCamp database schema with everything being related to the specific campsites, in which revised queries are built off of and SELECT * routes are removed.
+
+## Final Testing and Results
+
+- All tests no longer failed to complete with the revised schema and queries.
+- In addition to the revisions made, the team also had access to a premium Digital Ocean droplet through which vertical scaling could be simulated and comparisons drawn.
+- Vertical scaling is advised as the recommeded solution for production-level deployment purposes, as testing on the premium droplet concluded with overall lower HTTP request duration and failure rates of HTTP requests.
+
+## Contributers
+
+- Alex Peterec [tpeterec](https://github.com/tpeterec)
+- Israr Ali [israr2468](https://github.com/israr2468)
+- Joe Goralczyk [joegor85](https://github.com/joegor85)
+- Alfonso Rios [amrioss](https://github.com/amrioss)
+- Daniel Purdy [DanielPurdy509](https://github.com/DanielPurdy509)
+
+
+
+
